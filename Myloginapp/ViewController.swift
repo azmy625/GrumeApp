@@ -38,9 +38,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
         email.delegate = self
         password.delegate = self
         
-        //Azu add 2 lines
-        let textField = UITextField()
-        textField.isSecureTextEntry = true
+        //Azu adds 2 lines
+      var isSecureTextEntry: Bool
+        password.isSecureTextEntry = true
 
         
     }
