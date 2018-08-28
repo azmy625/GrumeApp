@@ -29,6 +29,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var handle: AuthStateDidChangeListenerHandle?
     var isLogIn: Bool!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -73,6 +74,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 //self.fromUserId.text = authResult?.uid
                 self.isLogIn = true
                 self.bottomLabel.text = "登録が成功しました"
+                
+                let storyboard: UIStoryboard = self.storyboard!
+                let nextView = storyboard.instantiateViewController(withIdentifier: "selectView")
+                self.present(nextView, animated: true, completion: nil)
+                
             } else {
                 self.bottomLabel.text = error!.localizedDescription
             }
@@ -82,6 +88,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBAction func login(_ sender: Any) {
         if self.isLogIn {
             self.bottomLabel.text = "既にログインしています"
+            
+        
+            let storyboard: UIStoryboard = self.storyboard!
+            let nextView = storyboard.instantiateViewController(withIdentifier: "selectView")
+            self.present(nextView, animated: true, completion: nil)
+            
             return
         }
         self.auth.signIn(withEmail: self.email.text!, password: self.password.text!) { (authResult, error) in
@@ -92,7 +104,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 self.bottomLabel.text = "ログインに成功しました"
                 
                 let storyboard: UIStoryboard = self.storyboard!
-                let nextView = storyboard.instantiateViewController(withIdentifier: "chatController")
+                let nextView = storyboard.instantiateViewController(withIdentifier: "selectView")
                 self.present(nextView, animated: true, completion: nil)
             } else {
                 self.bottomLabel.text = error!.localizedDescription
