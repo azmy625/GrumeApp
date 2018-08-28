@@ -90,6 +90,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 //self.fromUserId.text = authResult?.uid
                 self.isLogIn = true
                 self.bottomLabel.text = "ログインに成功しました"
+                
+                let storyboard: UIStoryboard = self.storyboard!
+                let nextView = storyboard.instantiateViewController(withIdentifier: "chatController")
+                self.present(nextView, animated: true, completion: nil)
             } else {
                 self.bottomLabel.text = error!.localizedDescription
             }
