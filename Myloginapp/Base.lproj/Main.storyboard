@@ -63,15 +63,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gmail Adress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjT-uz-fXb">
+                                <rect key="frame" x="72" y="142" width="101" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yV4-um-7rr">
+                                <rect key="frame" x="72" y="220" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="LoginButton" destination="F5X-GY-loi" id="O2W-JH-lWW"/>
+                        <outlet property="bottomLabel" destination="luE-TK-Mf0" id="UE4-H7-Ip4"/>
                         <outlet property="email" destination="MPB-oS-zOz" id="43b-iG-m9C"/>
-                        <outlet property="loginButton" destination="48w-t2-TEm" id="AA6-CW-NJ2"/>
                         <outlet property="password" destination="qHd-pC-DWq" id="LTQ-YR-MRh"/>
-                        <outlet property="status" destination="luE-TK-Mf0" id="Nfx-xa-iID"/>
+                        <outlet property="signUpButton" destination="48w-t2-TEm" id="Qgx-fx-9AI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

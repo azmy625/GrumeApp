@@ -19,9 +19,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     @IBOutlet weak var password: UITextField!
     
-    @IBOutlet weak var loginButton: UIButton!
+
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var LoginButton: UIButton!
     
-    @IBOutlet weak var status: UILabel!
+    @IBOutlet weak var bottomLabel: UILabel!
+    
     var auth: Auth!
     var handle: AuthStateDidChangeListenerHandle?
     var isLogIn: Bool!
@@ -34,7 +37,15 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         email.delegate = self
         password.delegate = self
+        
+        //Azu add 2 lines
+        let textField = UITextField()
+        textField.isSecureTextEntry = true
+
+        
     }
+    
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -61,16 +72,16 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 //self.fromEmail.text = authResult?.email
                 //self.fromUserId.text = authResult?.uid
                 self.isLogIn = true
-                self.status.text = "登録が成功しました"
+                self.bottomLabel.text = "登録が成功しました"
             } else {
-                self.status.text = error!.localizedDescription
+                self.bottomLabel.text = error!.localizedDescription
             }
         }
     }
     
     @IBAction func login(_ sender: Any) {
         if self.isLogIn {
-            self.status.text = "既にログインしています"
+            self.bottomLabel.text = "既にログインしています"
             return
         }
         self.auth.signIn(withEmail: self.email.text!, password: self.password.text!) { (authResult, error) in
@@ -78,9 +89,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 //self.fromEmail.text = authResult?.email
                 //self.fromUserId.text = authResult?.uid
                 self.isLogIn = true
-                self.status.text = "ログインに成功しました"
+                self.bottomLabel.text = "ログインに成功しました"
             } else {
-                self.status.text = error!.localizedDescription
+                self.bottomLabel.text = error!.localizedDescription
             }
         }
     }
