@@ -18,10 +18,10 @@
 		16662229213445B30045D4D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16662228213445B30045D4D8 /* GoogleService-Info.plist */; };
 		1666222A213445B30045D4D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16662228213445B30045D4D8 /* GoogleService-Info.plist */; };
 		1666222B213445B30045D4D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16662228213445B30045D4D8 /* GoogleService-Info.plist */; };
-		166622702135031D0045D4D8 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1666226F2135031D0045D4D8 /* ChatViewController.swift */; };
-		166622722135043F0045D4D8 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166622712135043F0045D4D8 /* RecommendViewController.swift */; };
 		16662276213504EF0045D4D8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16662275213504EF0045D4D8 /* SettingViewController.swift */; };
 		2B2703DA64E75E0E1904F6A1 /* Pods_Myloginapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4A62A04ABD20B9E6026932 /* Pods_Myloginapp.framework */; };
+		41410D4C21350D0300C35739 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41410D4B21350D0300C35739 /* ChatViewController.swift */; };
+		41410D4E21350D2200C35739 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41410D4D21350D2200C35739 /* RecommendViewController.swift */; };
 		8AF3F6567C4E17D38C153F3F /* Pods_MyloginappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8B169C86331DA2DDE49CE0 /* Pods_MyloginappUITests.framework */; };
 		F1867247D1462D986B61FCF7 /* Pods_MyloginappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6556B7E8BA6E52FD7ABCCE6 /* Pods_MyloginappTests.framework */; };
 /* End PBXBuildFile section */
@@ -62,11 +62,11 @@
 		1666221A213443EF0045D4D8 /* MyloginappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyloginappUITests.swift; sourceTree = "<group>"; };
 		1666221C213443EF0045D4D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16662228213445B30045D4D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		1666226F2135031D0045D4D8 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = "/Users/aokijun/Desktop/summer-swift/Myloginapp/Myloginapp/ChatViewController.swift"; sourceTree = "<absolute>"; };
-		166622712135043F0045D4D8 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecommendViewController.swift; path = "/Users/aokijun/Desktop/summer-swift/Myloginapp/Myloginapp/RecommendViewController.swift"; sourceTree = "<absolute>"; };
 		16662275213504EF0045D4D8 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		1BE96BB92FB6DC1F7144EB67 /* Pods-MyloginappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyloginappUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyloginappUITests/Pods-MyloginappUITests.release.xcconfig"; sourceTree = "<group>"; };
 		36490EAB2F09B15EFE38EA85 /* Pods-MyloginappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyloginappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyloginappTests/Pods-MyloginappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		41410D4B21350D0300C35739 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		41410D4D21350D2200C35739 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		47961043A66E8EE52E81E1FA /* Pods-MyloginappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyloginappTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyloginappTests/Pods-MyloginappTests.release.xcconfig"; sourceTree = "<group>"; };
 		E06011ADA32BF15A9E3BE6AD /* Pods-MyloginappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyloginappUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyloginappUITests/Pods-MyloginappUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6556B7E8BA6E52FD7ABCCE6 /* Pods_MyloginappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyloginappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,9 +127,7 @@
 		166621F6213443ED0045D4D8 /* Myloginapp */ = {
 			isa = PBXGroup;
 			children = (
-				166622712135043F0045D4D8 /* RecommendViewController.swift */,
 				166621F7213443ED0045D4D8 /* AppDelegate.swift */,
-				1666226F2135031D0045D4D8 /* ChatViewController.swift */,
 				166621F9213443ED0045D4D8 /* ViewController.swift */,
 				166621FB213443ED0045D4D8 /* Main.storyboard */,
 				16662201213443EF0045D4D8 /* Assets.xcassets */,
@@ -137,6 +135,8 @@
 				16662206213443EF0045D4D8 /* Info.plist */,
 				166621FE213443ED0045D4D8 /* Myloginapp.xcdatamodeld */,
 				16662275213504EF0045D4D8 /* SettingViewController.swift */,
+				41410D4B21350D0300C35739 /* ChatViewController.swift */,
+				41410D4D21350D2200C35739 /* RecommendViewController.swift */,
 			);
 			path = Myloginapp;
 			sourceTree = "<group>";
@@ -419,10 +419,10 @@
 			files = (
 				16662200213443ED0045D4D8 /* Myloginapp.xcdatamodeld in Sources */,
 				166621FA213443ED0045D4D8 /* ViewController.swift in Sources */,
-				166622702135031D0045D4D8 /* ChatViewController.swift in Sources */,
+				41410D4E21350D2200C35739 /* RecommendViewController.swift in Sources */,
+				41410D4C21350D0300C35739 /* ChatViewController.swift in Sources */,
 				166621F8213443ED0045D4D8 /* AppDelegate.swift in Sources */,
 				16662276213504EF0045D4D8 /* SettingViewController.swift in Sources */,
-				166622722135043F0045D4D8 /* RecommendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
