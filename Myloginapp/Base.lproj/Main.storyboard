@@ -210,6 +210,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Cwg-Qu-t3S"/>
                     </view>
+                    <connections>
+                        <outlet property="inputToolbar" destination="DXS-JV-y6b" id="SGD-kc-Tve"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xqw-bm-ivG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

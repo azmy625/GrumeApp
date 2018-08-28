@@ -7,7 +7,8 @@ target 'Myloginapp' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
-  pod 'JSQMessagesViewController', :git => 'https://github.com/jessesquires/JSQMessagesViewController', :tag => '7.2.0'
+  pod 'Firebase/Database'
+  pod 'JSQMessagesViewController'
 
   # Pods for Myloginapp
 
