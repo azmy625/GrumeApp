@@ -1,8 +1,9 @@
 //
 //  ChatViewController.swift
-//  
+//  Myloginapp
 //
-//  Created by aokijun on 2018/08/28.
+//  Created by 安住洋平 on 2018/08/28.
+//  Copyright © 2018年 aokijun. All rights reserved.
 //
 
 import UIKit
