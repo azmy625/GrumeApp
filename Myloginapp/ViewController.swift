@@ -10,9 +10,6 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-
-
-
 class ViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var email: UITextField!
@@ -32,6 +29,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
         self.auth = Auth.auth()
         self.isLogIn = false
@@ -56,6 +54,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        
         self.auth.removeStateDidChangeListener(self.handle!)
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1647FB7B2136344300C58713 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1647FB7A2136344300C58713 /* MapViewController.swift */; };
 		166621F8213443ED0045D4D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166621F7213443ED0045D4D8 /* AppDelegate.swift */; };
 		166621FA213443ED0045D4D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166621F9213443ED0045D4D8 /* ViewController.swift */; };
 		166621FD213443ED0045D4D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166621FB213443ED0045D4D8 /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		013324CE7DE3BA08CDB572FE /* Pods-Myloginapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myloginapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Myloginapp/Pods-Myloginapp.debug.xcconfig"; sourceTree = "<group>"; };
 		0385F28EBE55E3909F4AA862 /* Pods-Myloginapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myloginapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Myloginapp/Pods-Myloginapp.release.xcconfig"; sourceTree = "<group>"; };
 		0F4A62A04ABD20B9E6026932 /* Pods_Myloginapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Myloginapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1647FB7A2136344300C58713 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		166621F4213443ED0045D4D8 /* Myloginapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Myloginapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		166621F7213443ED0045D4D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		166621F9213443ED0045D4D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				16662275213504EF0045D4D8 /* SettingViewController.swift */,
 				41410D4B21350D0300C35739 /* ChatViewController.swift */,
 				41410D4D21350D2200C35739 /* RecommendViewController.swift */,
+				1647FB7A2136344300C58713 /* MapViewController.swift */,
 			);
 			path = Myloginapp;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				41410D4C21350D0300C35739 /* ChatViewController.swift in Sources */,
 				166621F8213443ED0045D4D8 /* AppDelegate.swift in Sources */,
 				16662276213504EF0045D4D8 /* SettingViewController.swift in Sources */,
+				1647FB7B2136344300C58713 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
