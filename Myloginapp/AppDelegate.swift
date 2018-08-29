@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         FirebaseApp.configure()
+        
+        AnalyticsConfiguration.shared().setAnalyticsCollectionEnabled(false)
+        
         return true
     }
 

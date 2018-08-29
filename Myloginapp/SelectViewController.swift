@@ -12,6 +12,8 @@ class SelectViewController: UIViewController {
     @IBOutlet weak var grunaviButton: UIButton!
     @IBOutlet weak var chatbutton: UIButton!
     
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
