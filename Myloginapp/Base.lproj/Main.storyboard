@@ -91,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="-430" y="140"/>
         </scene>
         <!--RecommendViewController-->
         <scene sceneID="5eS-j7-qty">
@@ -108,6 +108,7 @@
                                     <tabBarItem systemItem="favorites" id="a8l-Xe-FUs"/>
                                     <tabBarItem systemItem="more" id="Pmp-cD-Xaj"/>
                                     <tabBarItem title="Item" id="1YA-ny-1Ue"/>
+                                    <tabBarItem title="Item" id="hSc-9C-JdY"/>
                                 </items>
                             </tabBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iN1-c3-e2n">
@@ -124,6 +125,27 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lf1-Rl-Glg">
+                                <rect key="frame" x="221" y="627" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="3C5-0t-Jc8" kind="show" id="mRA-qD-9DJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qT-jq-YQ5">
+                                <rect key="frame" x="316" y="627" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="yg5-uS-ZEN" kind="show" id="jKw-tk-78C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zJ-4v-9Tz">
+                                <rect key="frame" x="30" y="627" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="pER-Lc-fVq" kind="show" id="lW8-vq-tHU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -157,6 +179,7 @@
                                     <tabBarItem systemItem="favorites" id="VSy-fK-kFw"/>
                                     <tabBarItem systemItem="more" id="vLi-mb-0kZ"/>
                                     <tabBarItem title="Item" id="0TV-4J-3h7"/>
+                                    <tabBarItem title="Item" id="h2v-3i-1tk"/>
                                 </items>
                             </tabBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xHI-mN-Idi">
@@ -173,6 +196,27 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6h-q4-UJc">
+                                <rect key="frame" x="123" y="627" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="RYf-3w-Qw1" kind="show" id="qZi-Oc-xwc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8B-po-GJf">
+                                <rect key="frame" x="315" y="627" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="yg5-uS-ZEN" kind="show" id="MP4-tp-Vlm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thD-gW-I3M">
+                                <rect key="frame" x="29" y="627" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="pER-Lc-fVq" kind="show" id="SE4-ij-PFN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -190,6 +234,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hPu-K5-ypy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1148" y="1038.5307346326838"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="K3g-ux-vFC">
+            <objects>
+                <viewController id="yg5-uS-ZEN" customClass="MapViewController" customModule="Myloginapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VTM-0a-roH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="boc-9U-kJC">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="nm6-Uq-oBF"/>
+                                    <tabBarItem systemItem="more" id="f30-qM-ghX"/>
+                                    <tabBarItem title="Item" id="lgm-4F-66O"/>
+                                    <tabBarItem title="Item" id="W4J-DP-895"/>
+                                </items>
+                            </tabBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEd-UR-s9I">
+                                <rect key="frame" x="24" y="627" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="pER-Lc-fVq" kind="show" id="wG4-9m-pde"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxk-rp-RI9">
+                                <rect key="frame" x="220" y="627" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="3C5-0t-Jc8" kind="show" id="SI1-1R-4nK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOr-ez-ayx">
+                                <rect key="frame" x="122" y="627" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="RYf-3w-Qw1" kind="show" id="KpG-W4-9Wn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nGm-Ch-GMd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Yy-3B-srg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2321" y="1029"/>
         </scene>
         <!--ChatViewController-->
         <scene sceneID="tiA-QK-iRE">
@@ -215,7 +308,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xqw-bm-ivG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="893.60000000000002" y="139.880059970015"/>
+            <point key="canvasLocation" x="1601" y="210"/>
         </scene>
         <!--Select View Controller-->
         <scene sceneID="7FN-JW-eqx">
@@ -232,6 +325,7 @@
                                 <items>
                                     <tabBarItem systemItem="favorites" id="LRO-Vz-qvc"/>
                                     <tabBarItem systemItem="more" id="0et-ee-sPK"/>
+                                    <tabBarItem title="Item" id="ZUD-Kd-rqt"/>
                                     <tabBarItem title="Item" id="anb-LQ-R6O"/>
                                 </items>
                             </tabBar>
@@ -248,6 +342,31 @@
                                     <action selector="chatSegue:" destination="pER-Lc-fVq" eventType="touchUpInside" id="lRG-vJ-Pxo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhR-gE-UkA">
+                                <rect key="frame" x="27" y="627" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vx2-cN-xfs">
+                                <rect key="frame" x="126" y="627" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="RYf-3w-Qw1" kind="show" id="o6C-Fe-34T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UuK-bd-38e">
+                                <rect key="frame" x="321" y="627" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="yg5-uS-ZEN" kind="show" id="bgq-MU-jgA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BC0-uG-yNN">
+                                <rect key="frame" x="216" y="627" width="36" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="3C5-0t-Jc8" kind="show" id="zmf-Sb-Xdg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="g3A-ae-zgL"/>
@@ -259,7 +378,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lyq-9Y-VaY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="345" y="-544"/>
+            <point key="canvasLocation" x="344.80000000000001" y="-544.67766116941539"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="wG4-9m-pde"/>
+        <segue reference="jKw-tk-78C"/>
+        <segue reference="SI1-1R-4nK"/>
+        <segue reference="KpG-W4-9Wn"/>
+    </inferredMetricsTieBreakers>
 </document>
